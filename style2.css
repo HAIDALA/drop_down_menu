@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
-  margin: 0;
-  padding: 0;
+  margin: default;
+  padding: default;
   box-sizing: border-box;
   user-select: none;
   font-family: 'Poppins', sans-serif;
+}
+
+label:hover{
+  padding: 8px 25px;
+  background-color: blue;
 }
 nav{
   position: absolute;
@@ -14,15 +19,18 @@ nav{
   background: rgb(141, 141, 255);
   width: 400px;
   line-height: 40px;
-  padding: 8px 25px;
+  /* padding: 8px 25px; */
   
+
 }
+
 nav label{
   color: black;
   font-size: 22px;
   font-weight: 500;
   display: block;
   cursor: pointer;
+  padding: 8px 25px;
 }
 .button span{
   float: right;
@@ -39,37 +47,22 @@ nav ul{
   top: 75px;
   left: 0;
   width: 100%;
-  border-radius: 5px;
   display: none;
 }
 [id^=btn]:checked + ul{
   display: block;
 }
 
-/* .menu li{
-    display : inline;
-} */
 
-nav ul li{
-  line-height: 40px;
-  padding: 8px 20px;
-  cursor: pointer;
-  
-}
-/* nav ul li label{
-  font-size: 18px;
-} */
 nav ul li a{
   color: black;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
 }
-/* nav ul li a:hover,
-nav  label:hover{
-  background: rgb(105, 105, 226);
- 
-} */
+
+
+nav ul li a{
+    display: inline-block;
+}
+
 
 #titre{
     
@@ -77,9 +70,8 @@ nav  label:hover{
     background-color: black;
 }
 
-nav ul ul{
-  position: static;
-}
+
+
 
 nav ul li span.rotate{
   transform: rotate(-180deg);
@@ -87,4 +79,10 @@ nav ul li span.rotate{
 input{
   display: none;
 }
+
+nav ul li a{
+  display: inline-block;
+}
+
+
 
