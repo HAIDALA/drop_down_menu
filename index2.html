@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>POWER</title>
+      <link rel="stylesheet" href="style2.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   </head>
+   <body>
+      <nav>
+         <label for="btn" class="button">Choose your industry
+         <span class="fas fa-caret-down"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul class="menu">
+            <li><a href="#"><img src="industry1.avif" alt="logo" width="200" height="auto" ><br><span id="titre">POWER DELIVERY</span></a></li>
+            <li><a href="#"><img src="industry2.avif" alt="logo" width="200" height="auto" ><br><span id="titre">POWER GENERATION</span></a></li>
+            <li><a href="#"><img src="industry3.avif" alt="logo" width="200" height="auto" ><br><span id="titre">Renewables and Storage</a></li>
+            <li><a href="#"><img src="industry4.avif" alt="logo" width="200" height="auto" ><br><span id="titre">Food and Beverage</a></li>
+         </ul>
+      </nav>
+      <script>
+         $('nav .button').click(function(){
+           $('nav .button span').toggleClass("rotate");
+         });
+           
+      </script>
+   </body>
+</html>

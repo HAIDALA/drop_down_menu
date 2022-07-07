@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  position: absolute;
+  top: 7%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background: rgb(141, 141, 255);
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  
+}
+nav label{
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+.button span{
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.button span.rotate{
+  transform: rotate(-180deg);
+}
+nav ul{
+  position: absolute;
+  background: white;
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+[id^=btn]:checked + ul{
+  display: block;
+}
+
+/* .menu li{
+    display : inline;
+} */
+
+nav ul li{
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  
+}
+/* nav ul li label{
+  font-size: 18px;
+} */
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+/* nav ul li a:hover,
+nav  label:hover{
+  background: rgb(105, 105, 226);
+ 
+} */
+
+#titre{
+    
+    color : white;
+    background-color: black;
+}
+
+nav ul ul{
+  position: static;
+}
+
+nav ul li span.rotate{
+  transform: rotate(-180deg);
+}
+input{
+  display: none;
+}
+
